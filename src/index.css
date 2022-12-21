@@ -103,6 +103,10 @@ header p {
 .cartTotalBlock .greenButton {
   position: relative;
 }
+.cartTotalBlock .greenButton:disabled {
+  -webkit-animation: button-loading 0.6s ease-in-out infinite;
+          animation: button-loading 0.6s ease-in-out infinite;
+}
 .cartTotalBlock .greenButton:hover img {
   transform: translateX(5px);
 }
@@ -125,6 +129,10 @@ header p {
   cursor: pointer;
   transition: background 0.15s ease-in-out;
 }
+.greenButton:disabled {
+  background: #bebebe !important;
+  cursor: default;
+}
 .greenButton:hover {
   background: #b5df81;
 }
@@ -134,6 +142,9 @@ header p {
 
 .cartEmpty {
   text-align: center;
+}
+.cartEmpty h2 {
+  color: #87C20A;
 }
 .cartEmpty p {
   width: 280px;
@@ -181,4 +192,28 @@ header p {
 }
 .cartItem .removeBtn:hover {
   opacity: 1;
+}
+
+@-webkit-keyframes button-loading {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes button-loading {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=index.css.map */
