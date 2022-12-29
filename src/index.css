@@ -53,36 +53,6 @@ header p {
   width: 200px;
 }
 
-.overlay {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.35);
-  z-index: 1;
-}
-
-.drawer {
-  position: absolute;
-  width: 420px;
-  height: 100%;
-  right: 0;
-  background: #fff;
-  box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-}
-.drawer h2 {
-  margin: 0;
-}
-.drawer .items {
-  flex: 1;
-  overflow: auto;
-  margin-bottom: 40px;
-}
-
 .cartTotalBlock ul {
   display: block;
   margin-bottom: 40px !important;
